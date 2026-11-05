@@ -1,0 +1,25 @@
+/* Passage selector and keyword layout follow Luke–Acts. */
+.tools-passage-selector{align-items:center;gap:16px;margin:0 0 12px}
+.tools-passage-selector>label{display:flex;flex:1;min-width:0;flex-direction:column;gap:8px;font-size:12px;color:var(--muted)}
+.tools-passage-selector select{width:100%;min-width:0;min-height:48px;background:var(--bg);font-size:13px}
+.tools-passage-selector .week-arrows{align-self:flex-end;padding-bottom:2px}
+.tools-passage-note{font-size:13px;color:var(--muted);margin:0 0 27px;line-height:1.8}
+.tools-passage-note strong{color:var(--ink);font-weight:700}
+#bible-tools>.section-head{margin-bottom:24px}
+.tool-heading{font:30px/1.25 var(--serif);margin:28px 0 20px}
+.word-reading-notice{padding:20px 22px;border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 7px 7px 0;font-size:14px;line-height:1.85;color:var(--ink);margin-bottom:8px}
+.word-reading-notice>strong{font-weight:700;display:block}
+.word-reading-notice p{margin:4px 0 0;font-size:13px;color:var(--muted)}
+#bible-tools .word-cloud{margin-top:22px;min-height:100px;padding:28px 24px}
+#bible-tools .word-cloud-pill{min-height:44px}
+.word-insight .word-meaning p{font-size:15px;line-height:1.9;color:var(--muted);margin:16px 0}
+.word-insight .word-meaning p:first-child{margin-top:10px}
+.reading-highlight-toggle{padding:16px 0 7px;line-height:1.6;font-size:12px;color:var(--muted)}
+.reading-highlight-toggle input{flex-shrink:0}
+.reading-highlight-toggle:has(input:disabled){opacity:.65}
+#bible-tools .glossary-head .tool-heading{margin:0}
+#bible-tools .glossary-head{margin-top:28px;margin-bottom:20px}
+.glossary-item .definition p{font-size:14px;line-height:1.9;margin:14px 0}
+.glossary-item .definition .annotation{font-size:11px}
+@media(max-width:640px){.tools-passage-selector{padding:17px 15px;gap:10px}.tools-passage-selector .week-arrows{gap:5px}.tools-passage-selector .icon-button{width:38px;min-width:38px;min-height:42px;height:42px}.tools-passage-selector select{font-size:12px;min-height:46px;padding-right:28px}.tools-passage-selector>label{font-size:11px}.tools-passage-note{font-size:12px;margin-bottom:23px}.tool-heading{font-size:27px;margin-top:25px}.word-reading-notice{padding:17px;font-size:13px}.word-reading-notice p{font-size:12px}.word-insight{padding:23px 20px}.word-insight .word-meaning p{font-size:15px}.word-insight>h3{font-size:33px}#bible-tools .word-cloud{padding:23px 16px}.word-cloud-list{gap:9px}.word-cloud-pill.frequency-5{font-size:26px}.reading-highlight-toggle{font-size:12px;align-items:flex-start}.reading-highlight-toggle input{margin-top:3px}}
+@media(max-width:360px){.tools-passage-selector{flex-wrap:wrap}.tools-passage-selector>label{flex-basis:100%}.tools-passage-selector .week-arrows{margin-left:auto}.tool-heading{font-size:25px}}
