@@ -58,6 +58,7 @@ addEventListener('hashchange',readHash);
 async function refreshCatalog(){try{const r=await fetch(catalogURL,{cache:'no-store'});if(!r.ok)throw Error();const next=await r.json();const changed=JSON.stringify(next)!==JSON.stringify(catalog);catalog=next;catalogError=false;if(changed&&state.view==='commentaries')render();}catch{catalogError=true;if(state.view==='commentaries')render();}}
 async function init(){nav();try{const r=await fetch('./data.json');if(!r.ok)throw Error();bible=await r.json();readHash();refreshCatalog();}catch{$('#view').innerHTML='<div class="error"><p>The study could not be loaded. Please check your connection.</p><button class="primary-button" id="retry-init">Try again</button></div>';$('#retry-init').onclick=init;}}
 const chapterArt={
+ 6:['isaiah-06-holy-throne-v1.webp','A symbolic celestial throne enveloped in brilliant white light, with seraphim barely visible through the radiance'],
  1:['isaiah-01-belonging-v2.webp','An ox and donkey recognize their carers beside a stone feeding trough'],
  2:['isaiah-02-mountain-v2.webp','An elevated view of peaceful travelers approaching a mountain city'],
  3:['isaiah-03-empty-chair-v2.webp','A low view of an empty elder’s chair at an ancient city gate'],
