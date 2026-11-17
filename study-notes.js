@@ -97,7 +97,7 @@ export function mountStudyNotes(root, {chapter, repository, preview = false}) {
       if (!quiet) status.textContent = '';
     } catch (error) {
       if (!alive() || ticket !== request || error.name === 'AbortError') return;
-      status.textContent = 'Notes could not be loaded. Use Refresh to try again.';
+      status.textContent = 'Notes could not be loaded. Use Refresh to try again. If you use Tailscale, allow local-network access for this site when your browser asks.';
     } finally {
       if (alive() && ticket === request) {
         loading = false; controls(); list.removeAttribute('aria-busy');
