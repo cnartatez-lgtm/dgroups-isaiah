@@ -1,0 +1,32 @@
+{
+  "id": "/dgroups-isaiah/",
+  "name": "Isaiah · D-Groups",
+  "short_name": "Isaiah",
+  "description": "Study Isaiah chapter by chapter with EIC Rueil-Malmaison. Read the biblical text, explore its connections and reflect with pastoral commentaries.",
+  "lang": "en",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f8f3ee",
+  "theme_color": "#942e42",
+  "icons": [
+    {
+      "src": "./assets/app-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/app-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/app-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

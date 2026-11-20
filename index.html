@@ -2,9 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#942e42"><meta name="description" content="Study Isaiah with the World English Bible, repeated words, connected passages, visual reading aids, and weekly D-Groups commentaries.">
+  <meta name="theme-color" content="#942e42"><meta name="description" content="Study Isaiah chapter by chapter with EIC Rueil-Malmaison. Read the biblical text, explore its connections and reflect with pastoral commentaries.">
   <meta name="lesson-catalog" content="./published/catalog.json"><meta name="lesson-base" content="./published">
-  <meta name="robots" content="index,follow"><link rel="canonical" href="https://cnartatez-lgtm.github.io/dgroups-isaiah/"><title>Isaiah · D-Groups</title><link rel="icon" href="./assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./styles.css?v=20261105-design"><link rel="stylesheet" href="./luke.css"><link rel="stylesheet" href="./journey.css"><link rel="stylesheet" href="./interaction.css"><link rel="stylesheet" href="./refinement.css"><link rel="stylesheet" href="./motion.css"><link rel="stylesheet" href="./preview.css"><link rel="stylesheet" href="./intro-refinement.css"><link rel="stylesheet" href="./tools-refinement.css"><link rel="stylesheet" href="./isaiah-layout.css"><link rel="stylesheet" href="./study-notes.css?v=20261117"><script src="./motion-preference.js"></script><script type="module" src="./isaiah.js?v=20261117-notes"></script>
+  <meta name="robots" content="index,follow"><link rel="canonical" href="https://cnartatez-lgtm.github.io/dgroups-isaiah/"><title>Isaiah · D-Groups</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/app-192.png">
+  <link rel="apple-touch-icon" href="./assets/app-192.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="D-Groups · EIC Rueil-Malmaison">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:title" content="Isaiah · D-Groups Bible Study">
+  <meta property="og:description" content="Study Isaiah chapter by chapter with EIC Rueil-Malmaison. Read the biblical text, explore its connections and reflect with pastoral commentaries.">
+  <meta property="og:url" content="https://cnartatez-lgtm.github.io/dgroups-isaiah/">
+  <meta property="og:image" content="https://cnartatez-lgtm.github.io/dgroups-isaiah/assets/isaiah-share-v1.jpg">
+  <meta property="og:image:secure_url" content="https://cnartatez-lgtm.github.io/dgroups-isaiah/assets/isaiah-share-v1.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Isaiah. People follow a mountain path toward a sunlit city. D-Groups Bible Study, EIC Rueil-Malmaison.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Isaiah · D-Groups Bible Study">
+  <meta name="twitter:description" content="Study Isaiah chapter by chapter with EIC Rueil-Malmaison. Read the biblical text, explore its connections and reflect with pastoral commentaries.">
+  <meta name="twitter:image" content="https://cnartatez-lgtm.github.io/dgroups-isaiah/assets/isaiah-share-v1.jpg">
+  <meta name="twitter:image:alt" content="Isaiah. People follow a mountain path toward a sunlit city. D-Groups Bible Study, EIC Rueil-Malmaison.">
+  <link rel="stylesheet" href="./styles.css?v=20261105-design"><link rel="stylesheet" href="./luke.css"><link rel="stylesheet" href="./journey.css"><link rel="stylesheet" href="./interaction.css"><link rel="stylesheet" href="./refinement.css"><link rel="stylesheet" href="./motion.css"><link rel="stylesheet" href="./preview.css"><link rel="stylesheet" href="./intro-refinement.css"><link rel="stylesheet" href="./tools-refinement.css"><link rel="stylesheet" href="./isaiah-layout.css"><link rel="stylesheet" href="./study-notes.css?v=20261117"><script src="./motion-preference.js"></script><script type="module" src="./isaiah.js?v=20261117-notes"></script>
+  <link rel="stylesheet" href="./install.css">
+  <script type="module" src="./install.js"></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to study</a>
@@ -17,7 +40,9 @@
   <div class="workspace">
     <header class="topbar"><div class="breadcrumb">Isaiah <span>/</span> <strong>Study companion</strong></div><div class="top-actions"><button id="motion-toggle" class="motion-toggle" type="button" aria-pressed="true">Animations: On</button><span class="translation-label">WORLD ENGLISH BIBLE</span><button id="theme" class="icon-button" aria-label="Switch to dark mode"></button></div></header>
     <main id="main" tabindex="-1">
-      <section class="series-hero series-hero-overlay" aria-labelledby="book-title"><div class="hero-copy"><div class="eyebrow">THE BOOK OF ISAIAH · D-GROUPS</div><h1 id="book-title">The Holy One<br><em>who saves.</em></h1><p>From a vision of holiness to the hope of new creation.<br>Read closely. Discover connections. Grow together.</p><a href="#reading" id="begin" class="primary-button">Explore the text <span aria-hidden="true">↗</span></a></div><img src="./assets/isaiah-02-mountain-v2.webp" alt="Symbolic elevated view of people approaching a mountain city" fetchpriority="high"></section>
+      <section class="series-hero series-hero-overlay" aria-labelledby="book-title"><div class="hero-copy"><div class="eyebrow">THE BOOK OF ISAIAH · D-GROUPS</div><h1 id="book-title">The Holy One<br><em>who saves.</em></h1><p>From a vision of holiness to the hope of new creation.<br>Read closely. Discover connections. Grow together.</p><div class="study-actions"><a href="#reading" id="begin" class="primary-button">Explore the text <span aria-hidden="true">↗</span></a>
+        <button type="button" id="install-app" class="install-button" aria-controls="install-help" aria-expanded="false" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v11m-4-4 4 4 4-4M4 15v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4"/></svg>Install app</button></div>
+        <p id="install-help" class="install-help" hidden>In Chrome, open the ⋮ menu. Choose Install app, or Add to Home screen and then Install.</p></div><img src="./assets/isaiah-02-mountain-v2.webp" alt="Symbolic elevated view of people approaching a mountain city" fetchpriority="high"></section>
       <div id="view" aria-live="polite"><div class="loading">Opening Isaiah…</div></div>
       <footer><span class="footer-identity"><a class="footer-eic-mark" href="https://eicparis.org/" target="_blank" rel="noopener noreferrer" aria-label="Visit EIC Paris"><span class="eic-logo-switch"><img class="eic-logo-light" src="./assets/eic-logo-light.png" alt=""><img class="eic-logo-dark" src="./assets/eic-logo-dark.png" alt=""></span></a><span>D-Groups <span class="footer-dot">·</span> Rooted in Scripture. Growing together.<small class="pastoral-review">Reviewed by the pastors of <a href="https://eicparis.org/" target="_blank" rel="noopener noreferrer">EIC Paris</a>.</small></span></span><span class="footer-actions"><a class="text-link" href="https://eicparis.org/" target="_blank" rel="noopener noreferrer">eicparis.org ↗</a><button class="text-link" id="sources">Sources & credits ↗</button></span></footer>
     </main>

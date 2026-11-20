@@ -1,0 +1,39 @@
+.study-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  margin-top: 15px;
+}
+.series-hero-overlay .study-actions .primary-button { margin: 0; }
+.study-actions .install-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 8px 14px;
+  border: 1px solid #f4dbd1b3;
+  border-radius: 6px;
+  background: #301c27d9;
+  color: #fff8f0;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+.study-actions .install-button[hidden] { display: none; }
+.install-button svg { width: 17px; height: 17px; }
+.install-button:hover { background: #492838; }
+.install-button:focus-visible { outline: 2px solid white; outline-offset: 3px; }
+.series-hero-overlay .hero-copy > .install-help {
+  width: fit-content;
+  margin-top: 10px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  background: #2e1923ed;
+  color: #fff8f0;
+  font-size: 13px;
+}
+@media print {
+  .install-button, .install-help { display: none !important; }
+}
